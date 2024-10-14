@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation in CSS</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+     .container{
+        width: 100vw;
+        height: 100vh;
+        border: solid black 5px;
+        background-color: beige;
+        /* display: flex;
+        justify-content: center;
+
+        align-items: center; */
+     }
+     .box{
+        width: 1000px;
+        height: 1000px;
+        border-radius: 10px;
+        border: solid black 5px;
+        background-color: rgb(244, 244, 55);
+        position: relative;
+        animation-name: rightMovement;
+        animation-duration: 5s;
+        animation-iteration-count: infinite;
+        animation-delay: 3s;
+        animation-timing-function: linear;
+        animation-direction: alternate ;
+        animation-play-state: running;
+     }
+     @keyframes rightMovement{
+        from{
+            top: 0;
+            left: 0;
+
+        }
+        to{
+            top: 0;
+            left: 2800px;
+
+        }
+     }
+
+    </style>
+</head>
+<body>
+    <div class="container"> 
+        <div class="box"></div>
+    </div>
+</body>
+</html>
